@@ -1,0 +1,20 @@
+{
+    "name": "persgeek/filter",
+    "description": "Filter",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Saeed Johari",
+            "email": "persgeek@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "PG\\Filter\\": "src/"
+        }
+    }
+}

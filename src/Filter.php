@@ -39,11 +39,10 @@ trait Filter
 
             $filter = $this->getFilter($name);
 
-            if (!$filter) {
-                throw new RuntimeException('Could not found filter.');
-            }
+            if ($filter) {
 
-            $filter::apply($query, $value);
+                $filter::apply($query, $value);
+            }
         }
     }
 }

@@ -39,7 +39,7 @@ trait Filter
 
             $filter = $this->getFilter($name);
 
-            if ($filter) {
+            if ($filter && $value) {
 
                 $filter::apply($query, $value);
             }
